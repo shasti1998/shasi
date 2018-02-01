@@ -1,22 +1,17 @@
 #include <stdio.h>
-
 int main()
 {
     char ch;
 
-    /* Input a character from user */
+    //Asking user to enter the character
     printf("Enter any character: ");
-    scanf("%c", &ch);
+    //storing the entered character into the variable ch
+    scanf("%c",&ch);
 
-
-    if((ch >= 97 && ch <= 122) || (ch >= 65 && ch <= 90))
-    {
-        printf("Character is an ALPHABET.");
-    }
+    if( (ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+        printf("The entered character %c is an Alphabet",ch);
     else
-    {
-        printf("Character is NOT ALPHABET.");
-    }
+        printf("The entered character %c is not an Alphabet",ch);
 
     return 0;
 }
