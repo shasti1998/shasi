@@ -8,7 +8,7 @@ int main()
   
   if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') )
   {
-  	printf("\n %c is an Alphabet", ch);  	
+  	printf("\n %c is an PALINDROME", ch);  	
   }
   else if (ch >= '0' && ch <= '9')
   {
@@ -19,3 +19,4 @@ int main()
   
   return 0;
 }
+   
